@@ -1,0 +1,44 @@
+
+*** Assignment 2 Apartment Booking System ***
+
+This is a web based tourist apartment booking system. The foundation
+for the application is an object oriented model of a (very simplified) booking system.
+To be able to interact with the model we present a web GUI.
+All web stuff is implemented. The task is to get the model to work.
+
+Try to do as little coding as possible (use Java classes and methods in particular
+the collections, List/ArrayList and String)
+*
+* This is higher level programming arrays should be avoided.
+*
+
+Development environment
+----------------------
+The application is divided over a few directories in src
+
+    - abs: Class for the server and a class for some default test data.
+    - abs/model: The OO model classes. ABS is the class representing the overall system.
+    - abs/view: Helper classes to generate HTML-pages
+
+Workflow
+--------
+It's possible to run the server. Run class ABSServer (not fully functional)
+
+Then inspect everything.
+- See //TODO comments for where to code
+- Some classes (or parts of) are finished, see comments in code (= "Nothing to do here").
+
+1.  Start with Period class. Implement method overlaps(). Run testPeriod() in
+    ABSTest class util test passes.
+
+2.  Continue with the operations for Persons, see testCRUDPerson in ABSTest.
+    Add methods to ABS and uncomment in test util everything works.
+
+3.  In the same manner work with Apartments, see testCRUDApartments.
+
+4.  Implement the final test to get operation on Bookings to work, see testCRUDBookings!
+
+5.  In ABSServer uncomment a method at the time, run server, visit page test
+    operations. See comments in ASBServer.
+
+6.  Optional: Modify Server parts so that there is a search form (for Persons, Apartments or Bookings).
